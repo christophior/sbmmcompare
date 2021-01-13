@@ -181,7 +181,7 @@ const PlayerSection = ({ player, gamertag }) => {
 									className="rank-bronze"
 								/>
 
-								<p>{`${player.matchRanks.silver.matches.length} of ${player.matches.length} Bronze Ranked Matches`}</p>
+								<p>{`${player.matchRanks.silver.matches.length} of ${player.matches.length} Silver Ranked Matches`}</p>
 								<Progress
 									percent={player.matchRanks.silver.percent}
 									precision={2}
@@ -190,7 +190,7 @@ const PlayerSection = ({ player, gamertag }) => {
 									className="rank-silver"
 								/>
 
-								<p>{`${player.matchRanks.gold.matches.length} of ${player.matches.length} Bronze Ranked Matches`}</p>
+								<p>{`${player.matchRanks.gold.matches.length} of ${player.matches.length} Gold Ranked Matches`}</p>
 								<Progress
 									percent={player.matchRanks.gold.percent}
 									precision={2}
@@ -199,7 +199,7 @@ const PlayerSection = ({ player, gamertag }) => {
 									className="rank-gold"
 								/>
 
-								<p>{`${player.matchRanks.diamond.matches.length} of ${player.matches.length} Bronze Ranked Matches`}</p>
+								<p>{`${player.matchRanks.diamond.matches.length} of ${player.matches.length} Diamond Ranked Matches`}</p>
 								<Progress
 									percent={player.matchRanks.diamond.percent}
 									precision={2}

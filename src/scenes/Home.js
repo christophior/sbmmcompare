@@ -23,6 +23,8 @@ const options = Object.keys(contentMap).map((o) => ({
 	value: o,
 }));
 
+const width = window.innerWidth;
+
 const Home = ({ history }) => {
 	const [player1, setPlayer1] = useState({ platform: 'xbl', gamertag: '' });
 	const [player2, setPlayer2] = useState({ platform: 'xbl', gamertag: '' });
@@ -49,7 +51,10 @@ const Home = ({ history }) => {
 				style={{ height: '65%', border: 'none', boxShadow: 'none' }}
 			>
 				<Grid columns={2} relaxed="very" stackable>
-					<Grid.Column verticalAlign="middle" style={{ display: 'flex' }}>
+					<Grid.Column
+						verticalAlign="middle"
+						style={{ display: 'flex', padding: '0 6rem' }}
+					>
 						<Input
 							size="big"
 							label={
@@ -74,11 +79,16 @@ const Home = ({ history }) => {
 									gamertag: e.target.value,
 								})
 							}
-							style={{ width: '100%' }}
+							style={{ width: '100%', maxWidth: '100%' }}
 						/>
 					</Grid.Column>
 
-					<Grid.Column verticalAlign="middle" style={{ display: 'flex' }}>
+					{width <= 600 && <p style={{ margin: 'auto' }}>vs</p>}
+
+					<Grid.Column
+						verticalAlign="middle"
+						style={{ display: 'flex', padding: '0 6rem' }}
+					>
 						<Input
 							size="big"
 							label={
@@ -103,12 +113,12 @@ const Home = ({ history }) => {
 									gamertag: e.target.value,
 								})
 							}
-							style={{ width: '100%' }}
+							style={{ width: '100%', maxWidth: '100%' }}
 						/>
 					</Grid.Column>
 				</Grid>
 
-				<Divider vertical>vs</Divider>
+				{width > 600 && <Divider vertical>vs</Divider>}
 			</Segment>
 			<div
 				style={{
