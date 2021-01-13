@@ -11,7 +11,7 @@ import {
 
 const contentMap = {
 	xbl: 'xbox',
-	psn: 'playstation',
+	psn: 'psn',
 	acti: 'activision',
 	battle: 'battle.net',
 	uno: 'other',
@@ -44,7 +44,7 @@ const Home = ({ history }) => {
 					justifyContent: 'center',
 				}}
 			>
-				<Header as="h2">Johnny Se La Come</Header>
+				<Header as="h2">x Charl13 likes BBC</Header>
 			</div>
 			<Segment
 				placeholder

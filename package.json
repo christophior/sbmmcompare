@@ -7,7 +7,7 @@
 	"scripts": {
 		"start": "webpack serve",
 		"build": "rm -rf ./dist/ && webpack",
-		"postbuild": "cp -R static/ dist/",
+		"postbuild": "cp -R static/* dist/",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
 		"format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
