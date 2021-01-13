@@ -17,6 +17,8 @@ import get from 'lodash.get';
 import { poolMatches } from '../utils/rank';
 import Loader from '../components/Loader';
 
+const width = window.innerWidth;
+
 const format = (num) => Math.round(num * 100) / 100;
 
 const Compare = ({ match }) => {
@@ -99,7 +101,7 @@ const Compare = ({ match }) => {
 					gamertag={get(player2, 'data.uno', gamertag2)}
 				/>
 			</Grid>
-			<Divider vertical>vs</Divider>
+			{width > 600 && <Divider vertical>vs</Divider>}
 		</Segment>
 	);
 };
