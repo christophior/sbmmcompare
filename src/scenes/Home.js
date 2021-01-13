@@ -44,7 +44,7 @@ const Home = ({ history }) => {
 					justifyContent: 'center',
 				}}
 			>
-				<Header as="h2">x Charl13 likes BBC</Header>
+				<Header as="h2">compare warzone sbmm stats</Header>
 			</div>
 			<Segment
 				placeholder
